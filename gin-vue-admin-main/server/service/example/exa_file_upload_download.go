@@ -77,7 +77,6 @@ func (e *FileUploadAndDownloadService) GetFileRecordInfoList(info request.ExaAtt
 	if info.ClassId > 0 {
 		db = db.Where("class_id = ?", info.ClassId)
 	}
-
 	err = db.Count(&total).Error
 	if err != nil {
 		return

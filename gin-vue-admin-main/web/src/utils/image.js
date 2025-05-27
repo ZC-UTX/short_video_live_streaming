@@ -107,7 +107,7 @@ export const getUrl = (url) => {
 }
 
 const VIDEO_EXTENSIONS = ['.mp4', '.mov', '.webm', '.ogg']
-const VIDEO_MIME_TYPES = ['video/mp4', 'video/webm', 'video/ogg']
+const VIDEO_MIME_TYPES = ['video/mp4', 'video/webm', 'video/ogg','audio/ogg','audio/flac']
 const IMAGE_MIME_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/svg+xml']
 
 export const isVideoExt = (url) => {
