@@ -68,6 +68,10 @@
   "/src/view/systemTools/installPlugin/index.vue": "Index",
   "/src/view/systemTools/pubPlug/pubPlug.vue": "PubPlug",
   "/src/view/systemTools/system/system.vue": "Config",
+  "/src/view/video/videoUser/videoUser.vue": "VideoUser",
+  "/src/view/video/videoUser/videoUserForm.vue": "VideoUserForm",
+  "/src/view/video/videoWorks/videoWorks.vue": "VideoWorks",
+  "/src/view/video/videoWorks/videoWorksForm.vue": "VideoWorksForm",
   "/src/plugin/announcement/form/info.vue": "InfoForm",
   "/src/plugin/announcement/view/info.vue": "Info",
   "/src/plugin/email/view/index.vue": "Email"

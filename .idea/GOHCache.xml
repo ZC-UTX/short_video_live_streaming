@@ -1415,6 +1415,13 @@
             </set>
           </value>
         </entry>
+        <entry key="VideoWorks">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/model/video/video_works.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="Visitor">
           <value>
             <set>
@@ -3318,6 +3325,18 @@
               <option name="schema">
                 <list>
                   <option value="SysUserAuthority" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/model/video/video_works.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748339957250" />
+              <option name="schema">
+                <list>
+                  <option value="VideoWorks" />
                 </list>
               </option>
             </ScannedPath>
@@ -5259,6 +5278,7 @@
         <entry key="timer" value="timer" />
         <entry key="user_router" value="UserRouter" />
         <entry key="user_service" value="UserService" />
+        <entry key="video_works" value="VideoWorks" />
         <entry key="visitor" value="Visitor" />
         <entry key="writer" value="Writer" />
         <entry key="zap" value="Zap" />
