@@ -23,6 +23,7 @@
             <set>
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/api/v1/enter.go" />
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/api/v1/system/enter.go" />
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/api/v1/video/enter.go" />
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/plugin/email/api/enter.go" />
             </set>
           </value>
@@ -38,6 +39,13 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/service/system/sys_api.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="AppConfig">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/videoClient/works_server/basic/config/config.go" />
             </set>
           </value>
         </entry>
@@ -760,6 +768,7 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/config/gorm_mysql.go" />
+              <option value="file://$PROJECT_DIR$/videoClient/works_server/basic/config/config.go" />
             </set>
           </value>
         </entry>
@@ -973,6 +982,7 @@
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/plugin/email/router/enter.go" />
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/router/enter.go" />
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/router/system/enter.go" />
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/router/video/enter.go" />
             </set>
           </value>
         </entry>
@@ -997,6 +1007,7 @@
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/plugin/email/service/enter.go" />
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/service/enter.go" />
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/service/system/enter.go" />
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/service/video/enter.go" />
             </set>
           </value>
         </entry>
@@ -1415,10 +1426,78 @@
             </set>
           </value>
         </entry>
+        <entry key="VideoUser">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/model/video/video_user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="VideoUserApi">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/api/v1/video/video_user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="VideoUserRouter">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/router/video/video_user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="VideoUserSearch">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/model/video/request/video_user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="VideoUserService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/service/video/video_user.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="VideoWorks">
           <value>
             <set>
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/rm_file/430367700/server/model/video/video_works.go" />
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/model/video/video_works.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="VideoWorksApi">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/rm_file/430367700/server/api/v1/video/video_works.go" />
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/api/v1/video/video_works.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="VideoWorksRouter">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/rm_file/430367700/server/router/video/video_works.go" />
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/router/video/video_works.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="VideoWorksSearch">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/rm_file/430367700/server/model/video/request/video_works.go" />
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/model/video/request/video_works.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="VideoWorksService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/rm_file/430367700/server/service/video/video_works.go" />
+              <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/service/video/video_works.go" />
             </set>
           </value>
         </entry>
@@ -1694,6 +1773,13 @@
             </set>
           </value>
         </entry>
+        <entry key="server">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/videoClient/works_server/basic/cmd/main.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="service">
           <value>
             <set>
@@ -1726,10 +1812,70 @@
     </option>
     <option name="scannedPathMapping">
       <map>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/rm_file/430367700/server/api/v1/video/video_works.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748338104892" />
+              <option name="schema">
+                <list>
+                  <option value="VideoWorksApi" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/rm_file/430367700/server/model/video/request/video_works.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748338104892" />
+              <option name="schema">
+                <list>
+                  <option value="VideoWorksSearch" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/rm_file/430367700/server/model/video/video_works.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748339957250" />
+              <option name="schema">
+                <list>
+                  <option value="VideoWorks" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/rm_file/430367700/server/router/video/video_works.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748338104891" />
+              <option name="schema">
+                <list>
+                  <option value="VideoWorksRouter" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/rm_file/430367700/server/service/video/video_works.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748338104892" />
+              <option name="schema">
+                <list>
+                  <option value="VideoWorksService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/api/v1/enter.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748335291230" />
+              <option name="lastModified" value="1748351261093" />
               <option name="schema">
                 <list>
                   <option value="ApiGroup" />
@@ -1989,6 +2135,42 @@
           <value>
             <ScannedPath>
               <option name="lastModified" value="1748335291233" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/api/v1/video/enter.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748351261094" />
+              <option name="schema">
+                <list>
+                  <option value="ApiGroup" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/api/v1/video/video_user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748351261094" />
+              <option name="schema">
+                <list>
+                  <option value="VideoUserApi" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/api/v1/video/video_works.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748351261094" />
+              <option name="schema">
+                <list>
+                  <option value="VideoWorksApi" />
+                </list>
+              </option>
             </ScannedPath>
           </value>
         </entry>
@@ -2434,7 +2616,7 @@
         <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/initialize/gorm_biz.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748335291241" />
+              <option name="lastModified" value="1748351261094" />
             </ScannedPath>
           </value>
         </entry>
@@ -2600,7 +2782,7 @@
         <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/initialize/router_biz.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748335291244" />
+              <option name="lastModified" value="1748351261094" />
             </ScannedPath>
           </value>
         </entry>
@@ -3330,10 +3512,46 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/model/video/request/video_user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748351261095" />
+              <option name="schema">
+                <list>
+                  <option value="VideoUserSearch" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/model/video/request/video_works.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748351261095" />
+              <option name="schema">
+                <list>
+                  <option value="VideoWorksSearch" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/model/video/video_user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748351261095" />
+              <option name="schema">
+                <list>
+                  <option value="VideoUser" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/model/video/video_works.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748339957250" />
+              <option name="lastModified" value="1748351261095" />
               <option name="schema">
                 <list>
                   <option value="VideoWorks" />
@@ -3643,7 +3861,7 @@
         <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/router/enter.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748335291265" />
+              <option name="lastModified" value="1748351261095" />
               <option name="schema">
                 <list>
                   <option value="RouterGroup" />
@@ -3868,10 +4086,46 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/router/video/enter.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748351261096" />
+              <option name="schema">
+                <list>
+                  <option value="RouterGroup" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/router/video/video_user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748351261096" />
+              <option name="schema">
+                <list>
+                  <option value="VideoUserRouter" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/router/video/video_works.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748351261096" />
+              <option name="schema">
+                <list>
+                  <option value="VideoWorksRouter" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/service/enter.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748335291267" />
+              <option name="lastModified" value="1748351261096" />
               <option name="schema">
                 <list>
                   <option value="ServiceGroup" />
@@ -4269,6 +4523,42 @@
               <option name="schema">
                 <list>
                   <option value="UserService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/service/video/enter.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748351261096" />
+              <option name="schema">
+                <list>
+                  <option value="ServiceGroup" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/service/video/video_user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748351261097" />
+              <option name="schema">
+                <list>
+                  <option value="VideoUserService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/service/video/video_works.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748351261097" />
+              <option name="schema">
+                <list>
+                  <option value="VideoWorksService" />
                 </list>
               </option>
             </ScannedPath>
@@ -5042,6 +5332,89 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/api/basic/cmd/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748423039920" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/api/basic/config/config.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748423200678" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/api/basic/config/global.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748423214764" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/api/basic/init/init.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748423225678" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/api/config/config.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748423102942" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/api/config/global.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748423110704" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/api/router/router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748423336488" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/works_server/basic/cmd/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748423868943" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/works_server/basic/config/config.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748423655008" />
+              <option name="schema">
+                <list>
+                  <option value="AppConfig" />
+                  <option value="Mysql" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/works_server/basic/config/global.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748424658272" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/works_server/basic/init/init.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748424742609" />
+            </ScannedPath>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="tableStructMapping">
@@ -5053,6 +5426,7 @@
         <entry key="api_group" value="ApiGroup" />
         <entry key="api_router" value="ApiRouter" />
         <entry key="api_service" value="ApiService" />
+        <entry key="app_config" value="AppConfig" />
         <entry key="args" value="args" />
         <entry key="authority_api" value="AuthorityApi" />
         <entry key="authority_btn_api" value="AuthorityBtnApi" />
@@ -5149,7 +5523,7 @@
         <entry key="init_dict" value="initDict" />
         <entry key="init_dict_detail" value="initDictDetail" />
         <entry key="init_excel_template" value="initExcelTemplate" />
-        <entry key="init_menu" value="InitMenu" />
+        <entry key="init_menu" value="initMenu" />
         <entry key="init_menu_authority" value="initMenuAuthority" />
         <entry key="init_router" value="InitRouter" />
         <entry key="init_user" value="initUser" />
@@ -5213,7 +5587,6 @@
         <entry key="router" value="router" />
         <entry key="router_group" value="RouterGroup" />
         <entry key="search_api_params" value="SearchApiParams" />
-        <entry key="server" value="Server" />
         <entry key="service" value="service" />
         <entry key="service_group" value="ServiceGroup" />
         <entry key="set_user_auth" value="SetUserAuth" />
@@ -5278,13 +5651,22 @@
         <entry key="timer" value="timer" />
         <entry key="user_router" value="UserRouter" />
         <entry key="user_service" value="UserService" />
+        <entry key="video_user" value="VideoUser" />
+        <entry key="video_user_api" value="VideoUserApi" />
+        <entry key="video_user_router" value="VideoUserRouter" />
+        <entry key="video_user_search" value="VideoUserSearch" />
+        <entry key="video_user_service" value="VideoUserService" />
         <entry key="video_works" value="VideoWorks" />
+        <entry key="video_works_api" value="VideoWorksApi" />
+        <entry key="video_works_router" value="VideoWorksRouter" />
+        <entry key="video_works_search" value="VideoWorksSearch" />
+        <entry key="video_works_service" value="VideoWorksService" />
         <entry key="visitor" value="Visitor" />
         <entry key="writer" value="Writer" />
         <entry key="zap" value="Zap" />
         <entry key="zap_core" value="ZapCore" />
       </map>
     </option>
-    <option name="lastTimeChecked" value="1748318370335" />
+    <option name="lastTimeChecked" value="1748422856209" />
   </component>
 </project>
