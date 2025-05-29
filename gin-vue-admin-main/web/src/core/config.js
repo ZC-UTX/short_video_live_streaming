@@ -4,7 +4,7 @@
 const greenText = (text) => `\x1b[32m${text}\x1b[0m`
 
 const config = {
-  appName: 'Gin-Vue-Admin',
+  appName: '瞬影工坊',
   appLogo: 'logo.png',
   showViteLogo: true,
   logs: []
@@ -14,7 +14,7 @@ export const viteLogo = (env) => {
   if (config.showViteLogo) {
     console.log(
       greenText(
-        `> 欢迎使用Gin-Vue-Admin，开源地址：https://github.com/flipped-aurora/gin-vue-admin`
+        `> 欢迎来到瞬影工坊，开源地址：https://github.com/flipped-aurora/gin-vue-admin`
       )
     )
     console.log(greenText(`> 当前版本:v2.8.2`))
@@ -39,8 +39,8 @@ export const viteLogo = (env) => {
         `--------------------------------------版权声明--------------------------------------`
       )
     )
-    console.log(greenText(`** 版权所有方：flipped-aurora开源团队 **`))
-    console.log(greenText(`** 版权持有公司：北京翻转极光科技有限责任公司 **`))
+    console.log(greenText(`** 版权所有方：瞬影工作室 **`))
+    console.log(greenText(`** 版权持有公司：瞬影工坊有限公司 **`))
     console.log(
       greenText(
         `** 剔除授权标识需购买商用授权：https://gin-vue-admin.com/empower/index.html **`

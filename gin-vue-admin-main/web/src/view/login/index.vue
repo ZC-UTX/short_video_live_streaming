@@ -1,7 +1,7 @@
 <template>
   <div id="userLayout" class="w-full h-full relative">
     <div
-      class="rounded-lg flex items-center justify-evenly w-full h-full md:w-screen md:h-screen md:bg-[#194bfb] bg-white"
+      class="rounded-lg flex items-center justify-evenly w-full h-full md:w-screen md:h-screen md:bg-[#312F9D] bg-white"
     >
       <div class="md:w-3/5 w-10/12 h-full flex items-center justify-evenly">
         <div
@@ -92,7 +92,7 @@
           </div>
         </div>
       </div>
-      <div class="hidden md:block w-1/2 h-full float-right bg-[#194bfb]">
+      <div class="hidden md:block w-1/2 h-full float-right bg-[#312F9D]">
         <img
           class="h-full"
           src="@/assets/login_right_banner.jpg"
