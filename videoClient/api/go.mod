@@ -2,7 +2,11 @@ module api
 
 go 1.24
 
-require github.com/gin-gonic/gin v1.10.1
+require (
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
+	github.com/gin-gonic/gin v1.10.1
+	github.com/golang-jwt/jwt/v5 v5.2.2
+)
 
 require (
 	github.com/bytedance/sonic v1.11.6 // indirect
