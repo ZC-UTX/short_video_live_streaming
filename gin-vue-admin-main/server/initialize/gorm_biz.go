@@ -7,7 +7,7 @@ import (
 
 func bizModel() error {
 	db := global.GVA_DB
-	err := db.AutoMigrate(video.VideoUser{}, video.VideoWorks{})
+	err := db.AutoMigrate(video.VideoUser{}, video.VideoWorks{}, video.VideoTopic{})
 	if err != nil {
 		return err
 	}
