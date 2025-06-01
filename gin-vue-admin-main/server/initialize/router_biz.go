@@ -15,7 +15,8 @@ func initBizRouter(routers ...*gin.RouterGroup) {
 	holder(publicGroup, privateGroup)
 	{
 		videoRouter := router.RouterGroupApp.Video
-		videoRouter.InitVideoUserRouter(privateGroup, publicGroup) // 占位方法，保证文件可以正确加载，避免go空变量检测报错，请勿删除。
-		videoRouter.InitVideoWorksRouter(privateGroup, publicGroup)
+		videoRouter.InitVideoUserRouter(privateGroup, publicGroup)
+		videoRouter.InitVideoWorksRouter(privateGroup, publicGroup) // 占位方法，保证文件可以正确加载，避免go空变量检测报错，请勿删除。
+		videoRouter.InitVideoTopicRouter(privateGroup, publicGroup)
 	}
 }

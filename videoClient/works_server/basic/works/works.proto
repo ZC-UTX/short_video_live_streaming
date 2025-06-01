@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package stream;
+
+option go_package = "/";
+
+message CreatedWorksReq {
+  string Title = 1;
+  string Desc = 2;
+  int64 MusicId = 3;
+  string WorkType = 4;
+  string IpAddress = 5;
+  string WorkPermission = 6;
+}
+
+message CreatedWorksResp {
+  int64 code = 1;
+  string msg = 2;
+}
+
+service Works {
+  rpc CreatedWorks(CreatedWorksReq) returns (CreatedWorksResp);
+}
