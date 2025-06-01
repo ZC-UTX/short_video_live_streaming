@@ -24,7 +24,6 @@ func (s *UserServer) Register(_ context.Context, in *__.RegisterReq) (*__.Regist
 	if err != false {
 		// 用户不存在，创建新用户
 		user = model.VideoUser{
-			Mobile:        in.Mobile,
 			Name:          in.Name,
 			NickName:      pkg.RandomString(12),         // 随机昵称
 			UserCode:      pkg.RandomFleetingString(12), // 随机用户编码
@@ -32,8 +31,14 @@ func (s *UserServer) Register(_ context.Context, in *__.RegisterReq) (*__.Regist
 			Sex:           in.Sex,
 			IpAddress:     in.IpAddress,
 			Constellation: in.Constellation,
+			Status:        in.Status,
 			AvatorFileId:  in.AcatorFileId,
+			AuthriryInfo:  in.AuthriryInfo,
+			Mobile:        in.Mobile,
+			RealNameAuth:  in.RealNameAuth,
 			Age:           in.Age,
+			OnlineStatus:  in.OnlineStatus,
+			AuthrityType:  in.AuthrityType,
 			CreatedAt:     time.Now(),
 			UpdatedAt:     time.Now(),
 		}
@@ -49,13 +54,13 @@ func (s *UserServer) Register(_ context.Context, in *__.RegisterReq) (*__.Regist
 		user.Constellation = in.Constellation
 		user.AvatorFileId = in.AcatorFileId
 		user.Age = in.Age
+		user.OnlineStatus = in.OnlineStatus
 		user.UpdatedAt = time.Now()
 
 		// 如果昵称为空，生成随机昵称
 		if user.NickName == "" {
 			user.NickName = pkg.RandomString(12)
 		}
-
 		if err = dao.Update(&user); err != false {
 			return nil, fmt.Errorf("更新用户信息失败: %v", err)
 		}

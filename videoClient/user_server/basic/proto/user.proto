@@ -15,6 +15,11 @@ message RegisterReq {
   string IpAddress = 7;
   string Constellation = 8;
   string Signature = 9;
+  string Status = 11;
+  string AuthriryInfo = 12;
+  string RealNameAuth = 13;
+  string OnlineStatus = 14;
+  string AuthrityType = 15;
 }
 
 message RegisterResp {

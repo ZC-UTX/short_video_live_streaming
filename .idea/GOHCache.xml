@@ -5366,14 +5366,14 @@
         <entry key="file://$PROJECT_DIR$/videoClient/user_server/basic/cmd/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748510933215" />
+              <option name="lastModified" value="1748781100199" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/videoClient/user_server/basic/config/config.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748508897556" />
+              <option name="lastModified" value="1748781100200" />
               <option name="schema">
                 <list>
                   <option value="AppConfig" />
@@ -5386,14 +5386,14 @@
         <entry key="file://$PROJECT_DIR$/videoClient/user_server/basic/config/global.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748508897556" />
+              <option name="lastModified" value="1748781100200" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/videoClient/user_server/basic/init/init.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748512428679" />
+              <option name="lastModified" value="1748781100200" />
             </ScannedPath>
           </value>
         </entry>
@@ -5459,7 +5459,7 @@
         <entry key="file://$PROJECT_DIR$/videoClient/user_server/handler/server/server.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748572035159" />
+              <option name="lastModified" value="1748782978619" />
               <option name="schema">
                 <list>
                   <option value="UserServer" />
