@@ -4,7 +4,7 @@ go 1.24
 
 require (
 	github.com/spf13/viper v1.20.1
-	github.com/zchengutx/testproject v0.0.0-20250601130748-f53423a89af7
+	github.com/zchengutx/testproject v0.0.0-20250602084530-49b01302563d
 	go.uber.org/zap v1.27.0
 	google.golang.org/grpc v1.72.2
 	gorm.io/driver/mysql v1.5.7

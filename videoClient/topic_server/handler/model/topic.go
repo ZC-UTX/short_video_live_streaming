@@ -37,7 +37,7 @@ func (v *VideoDataTopic) TableName() string {
 
 // 计算每个作品的使用量
 func (v *VideoDataTopic) SumVideoDateTopic(id int32) (video []VideoDataTopic, err error) {
-	err = config.DB.Where("id = ?", id).Find(&video).Error
+	err = config.DB.Where("topic_id = ?", id).Find(&video).Error
 	return
 }
 
