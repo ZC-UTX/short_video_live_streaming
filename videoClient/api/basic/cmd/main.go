@@ -12,11 +12,10 @@ import (
 )
 
 func main() {
-	router := gin.Default()
-
+	r := gin.Default()
 	srv := &http.Server{
 		Addr:    ":8080",
-		Handler: router,
+		Handler: r,
 	}
 
 	go func() {
