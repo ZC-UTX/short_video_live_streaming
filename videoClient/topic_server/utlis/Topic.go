@@ -1,21 +1,13 @@
 package utlis
 
 import (
-	"fmt"
 	"math"
 	"sort"
 	"time"
-	"works_server/handler/model"
+	"topic_server/handler/model"
 )
 
-// Topic 表示话题数据结构
-//type Topic struct {
-//	ID         int       // 话题ID
-//	Title      string    // 话题标题
-//	CreateTime time.Time // 创建时间
-//	VideoCount int       // 参与视频数
-//	HotScore   float64   // 实时热度分
-//}
+var Sum int
 
 // HotTopicAlgorithm 热度算法控制器
 type HotTopicAlgorithm struct {
@@ -43,18 +35,14 @@ func (h *HotTopicAlgorithm) CalculateHotScore(topic model.VideoTopic) float64 {
 		panic(err)
 	}
 
-	var sum int
-
 	for _, dataTopic := range dateTopic {
 		if dataTopic.TopicId == topic.Id {
-			sum++
+			Sum++
 		}
 	}
 
-	fmt.Println(sum)
-
 	// 2. 使用对数缩放视频参与数量
-	logScore := math.Log1p(float64(sum))
+	logScore := math.Log1p(float64(Sum))
 
 	// 3. 计算最终热度分
 	return logScore * timeDecay
@@ -86,20 +74,4 @@ func (h *HotTopicAlgorithm) GetHotTopics(topics []model.VideoTopic, page, pageSi
 	}
 
 	return topics[start:end]
-}
-
-// 示例使用
-func main() {
-	// 初始化算法
-	algo := NewHotTopicAlgorithm()
-
-	var topics []model.VideoTopic
-
-	// 获取热门话题 (每页10条)
-	hotTopics := algo.GetHotTopics(topics, 1, 10)
-
-	// 输出结果
-	for _, t := range hotTopics {
-		println(t.Id, t.Title, t.HotScore)
-	}
 }
