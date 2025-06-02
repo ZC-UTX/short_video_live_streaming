@@ -31,15 +31,18 @@ func (s *Server) ListTopic(_ context.Context, in *__.ListTopicReq) (*__.ListTopi
 	hotTopics := algo.GetHotTopics(video, 1, 10)
 
 	for _, videoTopic := range hotTopics {
+
+		count := utlis.SumCount(videoTopic.Id)
+
 		listsTopic := __.ListsTopic{
 			Title:      videoTopic.Title,
 			CreateUser: int64(videoTopic.CreateUser),
-			HotScore:   "",
-			VideoSum:   int64(utlis.Sum),
+			HotScore:   float32(videoTopic.HotScore),
+			VideoSum:   float32(count[videoTopic.Id]),
 		}
+
 		topicList = append(topicList, &listsTopic)
 	}
-
 	return &__.ListTopicResp{
 		Code:  200,
 		Msg:   "list topic success",

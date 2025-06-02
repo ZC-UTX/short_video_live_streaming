@@ -7,8 +7,6 @@ import (
 	"topic_server/handler/model"
 )
 
-var Sum int
-
 // HotTopicAlgorithm 热度算法控制器
 type HotTopicAlgorithm struct {
 	decayFactor float64   // 时间衰减因子
@@ -25,24 +23,14 @@ func NewHotTopicAlgorithm() *HotTopicAlgorithm {
 // CalculateHotScore 计算单个话题热度分
 func (h *HotTopicAlgorithm) CalculateHotScore(topic model.VideoTopic) float64 {
 	// 1. 计算时间衰减 (指数衰减模型)
+
 	hours := h.baseTime.Sub(topic.CreatedAt).Hours()
 	timeDecay := math.Exp(-h.decayFactor * hours)
 
-	var videoDate model.VideoDataTopic
-
-	dateTopic, err := videoDate.SumVideoDateTopic(topic.Id)
-	if err != nil {
-		panic(err)
-	}
-
-	for _, dataTopic := range dateTopic {
-		if dataTopic.TopicId == topic.Id {
-			Sum++
-		}
-	}
+	count := SumCount(topic.Id)
 
 	// 2. 使用对数缩放视频参与数量
-	logScore := math.Log1p(float64(Sum))
+	logScore := math.Log1p(float64(count[topic.Id]))
 
 	// 3. 计算最终热度分
 	return logScore * timeDecay
@@ -74,4 +62,25 @@ func (h *HotTopicAlgorithm) GetHotTopics(topics []model.VideoTopic, page, pageSi
 	}
 
 	return topics[start:end]
+}
+
+func SumCount(id int32) map[int32]int {
+	var videoDate model.VideoDataTopic
+
+	var Sum map[int32]int
+	var count int
+
+	dateTopic, err := videoDate.SumVideoDateTopic(id)
+	if err != nil {
+		panic(err)
+	}
+	for _, dataTopic := range dateTopic {
+		if dataTopic.TopicId == id {
+			count++
+			Sum = map[int32]int{
+				id: count,
+			}
+		}
+	}
+	return Sum
 }
