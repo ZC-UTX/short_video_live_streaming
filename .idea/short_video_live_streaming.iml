@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
   <component name="Go" enabled="true" />
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="Go" enabled="true" />
+>>>>>>> 4d43388c514b9bb888129755afab73411001eebc
 </module>

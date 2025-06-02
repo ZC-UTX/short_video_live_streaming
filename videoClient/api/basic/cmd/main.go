@@ -1,6 +1,7 @@
 package main
 
 import (
+	"api/router"
 	"context"
 	"log"
 	"net/http"
@@ -8,11 +9,13 @@ import (
 	"os/signal"
 	"time"
 
+	_ "api/basic/init"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
 	r := gin.Default()
+	router.Router(r)
 	srv := &http.Server{
 		Addr:    ":8080",
 		Handler: r,
