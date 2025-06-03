@@ -77,6 +77,8 @@ github.com/ugorji/go/codec v1.2.12 h1:9LC83zGrHhuUA9l16C9AHXAqEV/2wBQ4nkvumAE65E
 github.com/ugorji/go/codec v1.2.12/go.mod h1:UNopzCgEMSXjBc6AOMqYvWC1ktqTAfzJZUZgYf6w6lg=
 github.com/zchengutx/testproject v0.0.0-20250603013528-db195a0e6321 h1:ys0WhrvAphB7r5c9oUwDkD7HxnFjk/vc/iI27efAfPE=
 github.com/zchengutx/testproject v0.0.0-20250603013528-db195a0e6321/go.mod h1:Tmm4f0J9yTL4cepMrU9t/af5KTN2xYPUCwpIH1UmqWg=
+github.com/zchengutx/testproject v0.0.0-20250603015345-cce545387bd5 h1:RTZrgRsbpT7dLqAORIHCUXjzmDNccnbW0QrA+Ku+4bE=
+github.com/zchengutx/testproject v0.0.0-20250603015345-cce545387bd5/go.mod h1:OY9dBTmQDmHSMnzDJDquhugSLiglMwSwX/HYeYMhDiY=
 go.opentelemetry.io/auto/sdk v1.1.0 h1:cH53jehLUN6UFLY71z+NDOiNJqDdPRaXzTel0sJySYA=
 go.opentelemetry.io/auto/sdk v1.1.0/go.mod h1:3wSPjt5PWp2RhlCcmmOial7AvC4DQqZb7a7wCow3W8A=
 go.opentelemetry.io/otel v1.34.0 h1:zRLXxLCgL1WyKsPVrgbSdMN4c0FMkDAskSTQP+0hdUY=

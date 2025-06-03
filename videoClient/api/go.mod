@@ -5,7 +5,7 @@ go 1.24
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/gin-gonic/gin v1.10.1
-	github.com/zchengutx/testproject v0.0.0-20250603013528-db195a0e6321
+	github.com/zchengutx/testproject v0.0.0-20250603015345-cce545387bd5
 )
 
 require (
