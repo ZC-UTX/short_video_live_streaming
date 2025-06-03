@@ -6,8 +6,6 @@ import (
 	"google.golang.org/grpc"
 	"log"
 	"net"
-	_ "works_server/basic/init"
-	__ "works_server/basic/works"
 	"works_server/handler/service"
 )
 
