@@ -7,7 +7,6 @@ import (
 	"net"
 
 	"google.golang.org/grpc"
-	_ "user_server/basic/init"
 )
 
 var (

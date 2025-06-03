@@ -5,6 +5,8 @@ import (
 	"errors"
 	"fmt"
 	"github.com/go-redis/redis/v8"
+	"github.com/zchengutx/testproject/SendSms"
+	"github.com/zchengutx/testproject/nickName"
 	_ "github.com/zchengutx/testproject/topics"
 	"gorm.io/gorm"
 	"math/rand"
@@ -15,7 +17,6 @@ import (
 	__ "user_server/basic/proto"
 	"user_server/handler/dao"
 	"user_server/handler/model"
-	"user_server/pkg"
 )
 
 // server is used to implement helloworld.GreeterServer.
@@ -26,7 +27,7 @@ type UserServer struct {
 // 短信验证码
 func (s *UserServer) SendSms(_ context.Context, in *__.SendSmsReq) (*__.SendSmsResp, error) {
 	code := rand.Intn(9000) + 1000
-	sms, err := pkg.SendSms(in.Mobile, strconv.Itoa(code))
+	sms, err := SendSms.SendSms(in.Mobile, strconv.Itoa(code))
 	if err != nil {
 		return nil, err
 	}
@@ -62,8 +63,8 @@ func (s *UserServer) RegisterOrLogin(ctx context.Context, in *__.RegisterReq) (*
 	if errors.Is(err, gorm.ErrRecordNotFound) {
 		user = model.VideoUser{
 			Mobile:   in.Mobile,
-			NickName: pkg.RandomString(12),         // 默认随机昵称
-			UserCode: pkg.RandomFleetingString(10), // 用户唯一标识
+			NickName: nickName.RandomString(12),         // 默认随机昵称
+			UserCode: nickName.RandomFleetingString(10), // 用户唯一标识
 		}
 		if dao.Create(&user) {
 			return nil, fmt.Errorf("注册失败: %v", err)
@@ -81,7 +82,7 @@ func (s *UserServer) RegisterOrLogin(ctx context.Context, in *__.RegisterReq) (*
 	// 更新最后登录时间（可选）
 	user.UpdatedAt = time.Now()
 	if user.NickName == "" {
-		user.NickName = pkg.RandomString(12)
+		user.NickName = nickName.RandomString(12)
 	}
 	if !dao.Update(&user) {
 		return nil, fmt.Errorf("更新用户信息失败: %v", err)
