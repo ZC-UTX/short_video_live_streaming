@@ -2,9 +2,16 @@ package server
 
 import (
 	"context"
+	"errors"
 	"fmt"
+	"github.com/go-redis/redis/v8"
+	_ "github.com/zchengutx/testproject/topics"
+	"gorm.io/gorm"
+	"math/rand"
 	"net/http"
+	"strconv"
 	"time"
+	"user_server/basic/config"
 	__ "user_server/basic/proto"
 	"user_server/handler/dao"
 	"user_server/handler/model"
@@ -16,59 +23,74 @@ type UserServer struct {
 	__.UnimplementedUserServer
 }
 
-// // SayHello implements helloworld.GreeterServer
-func (s *UserServer) Register(_ context.Context, in *__.RegisterReq) (*__.RegisterResp, error) {
-	var user model.VideoUser
-	// 根据手机号查找用户
-	err := dao.GetOneByFields(&model.VideoUser{Mobile: in.Mobile}, &user)
-	if err != false {
-		// 用户不存在，创建新用户
-		user = model.VideoUser{
-			Name:          in.Name,
-			NickName:      pkg.RandomString(12),         // 随机昵称
-			UserCode:      pkg.RandomFleetingString(12), // 随机用户编码
-			Signature:     in.Signature,
-			Sex:           in.Sex,
-			IpAddress:     in.IpAddress,
-			Constellation: in.Constellation,
-			Status:        in.Status,
-			AvatorFileId:  in.AcatorFileId,
-			AuthriryInfo:  in.AuthriryInfo,
-			Mobile:        in.Mobile,
-			RealNameAuth:  in.RealNameAuth,
-			Age:           in.Age,
-			OnlineStatus:  in.OnlineStatus,
-			AuthrityType:  in.AuthrityType,
-			CreatedAt:     time.Now(),
-			UpdatedAt:     time.Now(),
-		}
-		if err = dao.Create(&user); err != false {
-			return nil, fmt.Errorf("创建用户失败: %v", err)
-		}
-	} else {
-		// 用户已存在，更新用户信息
-		user.Name = in.Name
-		user.Signature = in.Signature
-		user.Sex = in.Sex
-		user.IpAddress = in.IpAddress
-		user.Constellation = in.Constellation
-		user.AvatorFileId = in.AcatorFileId
-		user.Age = in.Age
-		user.OnlineStatus = in.OnlineStatus
-		user.UpdatedAt = time.Now()
-
-		// 如果昵称为空，生成随机昵称
-		if user.NickName == "" {
-			user.NickName = pkg.RandomString(12)
-		}
-		if err = dao.Update(&user); err != false {
-			return nil, fmt.Errorf("更新用户信息失败: %v", err)
-		}
+// 短信验证码
+func (s *UserServer) SendSms(_ context.Context, in *__.SendSmsReq) (*__.SendSmsResp, error) {
+	code := rand.Intn(9000) + 1000
+	sms, err := pkg.SendSms(in.Mobile, strconv.Itoa(code))
+	if err != nil {
+		return nil, err
 	}
+	if *sms.Body.Code != "OK" {
+		return nil, errors.New(*sms.Body.Code)
+	}
+	config.Rdb.Set(context.Background(), "sendSms"+in.Mobile+in.Source, strconv.Itoa(code), time.Minute*5)
+	return &__.SendSmsResp{}, nil
+}
+
+// 登录注册一体化
+// // SayHello implements helloworld.GreeterServer
+func (s *UserServer) RegisterOrLogin(ctx context.Context, in *__.RegisterReq) (*__.RegisterResp, error) {
+	// 1. 检查短信验证码（Redis）
+	smsCode, err := config.Rdb.Get(ctx, "sendSms"+in.Mobile+"register").Result()
+	if err == redis.Nil {
+		return nil, fmt.Errorf("请先获取短信验证码")
+	} else if err != nil {
+		return nil, fmt.Errorf("验证码校验失败: %v", err)
+	}
+	if smsCode != in.SmsCode { // 假设 in.SmsCode 是前端传入的验证码
+		return nil, fmt.Errorf("短信验证码错误")
+	}
+
+	// 2. 查询用户是否存在
+	var user model.VideoUser
+	dao.GetOneByFields(&model.VideoUser{Mobile: in.Mobile}, &user)
+	if err != nil && !errors.Is(err, gorm.ErrRecordNotFound) {
+		return nil, fmt.Errorf("查询用户失败: %v", err)
+	}
+
+	// 3. 用户不存在 → 注册
+	if errors.Is(err, gorm.ErrRecordNotFound) {
+		user = model.VideoUser{
+			Mobile:   in.Mobile,
+			NickName: pkg.RandomString(12),         // 默认随机昵称
+			UserCode: pkg.RandomFleetingString(10), // 用户唯一标识
+		}
+		if dao.Create(&user) {
+			return nil, fmt.Errorf("注册失败: %v", err)
+		}
+
+		return &__.RegisterResp{
+			Message:  "注册成功",
+			Code:     http.StatusOK,
+			UserId:   int64(user.Id),
+			UserCode: user.UserCode,
+		}, nil
+	}
+
+	// 4. 用户已存在 → 登录
+	// 更新最后登录时间（可选）
+	user.UpdatedAt = time.Now()
+	if user.NickName == "" {
+		user.NickName = pkg.RandomString(12)
+	}
+	if !dao.Update(&user) {
+		return nil, fmt.Errorf("更新用户信息失败: %v", err)
+	}
+
 	return &__.RegisterResp{
 		Message:  "登录成功",
 		Code:     http.StatusOK,
 		UserId:   int64(user.Id),
-		UserCode: user.UserCode, // 返回用户账号
+		UserCode: user.UserCode,
 	}, nil
 }
