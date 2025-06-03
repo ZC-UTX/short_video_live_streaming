@@ -1,8 +1,8 @@
 package api
 
 import (
-	"api/basic/config"
 	"github.com/gin-gonic/gin"
+	"github.com/zchengutx/testproject/config"
 	__ "github.com/zchengutx/testproject/topics"
 
 	"net/http"
