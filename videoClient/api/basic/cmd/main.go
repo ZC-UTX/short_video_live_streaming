@@ -14,7 +14,6 @@ import (
 func main() {
 
 	r := gin.Default()
-
 	router.Router(r)
 	srv := &http.Server{
 		Addr:    ":8080",

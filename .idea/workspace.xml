@@ -4,6 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="7e525bbb-eecd-43b6-bf09-af8fadc1dd84" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
     <list default="true" id="d3a742b7-a20e-43ad-bbd3-c873707491e8" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/GOHCache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GOHCache.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -11,6 +17,7 @@
       <change beforePath="$PROJECT_DIR$/videoClient/user_server/basic/proto/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/videoClient/user_server/basic/proto/user.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/videoClient/user_server/basic/proto/user_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/videoClient/user_server/basic/proto/user_grpc.pb.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/videoClient/user_server/handler/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/videoClient/user_server/handler/server/server.go" afterDir="false" />
+>>>>>>> 4d43388c514b9bb888129755afab73411001eebc
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +35,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;x1aoyuwq&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d5f844d0-4909-410d-ad6f-022b5b382b9d" />
+        <option name="url" value="https://github.com/zchengutx/short_video_live_streaming.git" />
+      </UrlAndAccount>
+    </option>
+=======
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/videoClient/user_server/handler/dao/common.go" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> 4d43388c514b9bb888129755afab73411001eebc
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -50,7 +73,11 @@
     &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+<<<<<<< HEAD
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+=======
     &quot;git-widget-placeholder&quot;: &quot;zk&quot;,
+>>>>>>> 4d43388c514b9bb888129755afab73411001eebc
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,

@@ -39,3 +39,28 @@ func (v *VideoWorks) CreatedWorks() (err error) {
 	err = config.DB.Create(v).Error
 	return
 }
+func (v *VideoWorks) ListWorks(Page int64, PageSize int64, title string, workType string, permission string) (worksList []VideoWorks, err error) {
+	page := Page
+	if page <= 0 {
+		page = 1
+	}
+
+	pageSize := PageSize
+	switch {
+	case pageSize > 100:
+		pageSize = 100
+	case pageSize <= 0:
+		pageSize = 10
+	}
+
+	offset := (page - 1) * pageSize
+	db := config.DB.Model(&v).Offset(int(offset)).Limit(int(pageSize))
+	if title != "" {
+		db = db.Where("title like ?", "%"+title+"%").Find(&worksList)
+	}
+	if workType != "" {
+		db = db.Where("work_type like ?", "%"+workType+"%").Find(&worksList)
+	}
+	db = db.Where("check_status = ?", "2").Where("work_permission = ?", "1").Find(&worksList)
+	return
+}

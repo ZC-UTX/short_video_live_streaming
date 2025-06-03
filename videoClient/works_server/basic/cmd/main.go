@@ -3,9 +3,15 @@ package main
 import (
 	"flag"
 	"fmt"
+	__ "github.com/zchengutx/testproject/works"
 	"google.golang.org/grpc"
 	"log"
 	"net"
+<<<<<<< HEAD
+=======
+	_ "works_server/basic/init"
+
+>>>>>>> 8a09d8c643121d1a9daf3be3d46ad033437c593c
 	"works_server/handler/service"
 )
 
