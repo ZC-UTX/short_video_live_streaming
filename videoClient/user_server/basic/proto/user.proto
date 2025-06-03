@@ -6,6 +6,32 @@ option go_package = "./";
 
 message RegisterReq {
   string Mobile = 1;
+  string SmsCode = 2;
+}
+
+message RegisterResp {
+  string Message = 1;
+  int64  Code = 2;
+  int64 UserId = 3;
+  string UserCode = 4;
+}
+
+message SendSmsReq {
+  string Mobile = 1;
+  string Source = 2;
+}
+
+message SendSmsResp {
+
+}
+
+message RealUserReq {
+  string Mobile = 1;
+  string Name = 2;
+}
+
+message RealUserResp {
+  string Mobile = 1;
   string Name = 2;
   string NickName = 3;
   string UserCode = 10;
@@ -22,13 +48,8 @@ message RegisterReq {
   string AuthrityType = 15;
 }
 
-message RegisterResp {
-  string Message = 1;
-  int64  Code = 2;
-  int64 UserId = 3;
-  string UserCode = 4;
-}
-
 service User {
+  rpc SendSms(SendSmsReq) returns (SendSmsResp);
   rpc Register(RegisterReq) returns (RegisterResp);
+  rpc RealUser(RealUserReq) returns (RealUserResp);
 }
