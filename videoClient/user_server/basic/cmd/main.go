@@ -3,10 +3,10 @@ package main
 import (
 	"flag"
 	"fmt"
+	_ "github.com/zchengutx/testproject/init"
+	"google.golang.org/grpc"
 	"log"
 	"net"
-
-	"google.golang.org/grpc"
 )
 
 var (
@@ -14,6 +14,7 @@ var (
 )
 
 func main() {
+	log.Println()
 	flag.Parse()
 	lis, err := net.Listen("tcp", fmt.Sprintf(":%d", *port))
 	if err != nil {

@@ -5,14 +5,19 @@ import (
 	"errors"
 	"fmt"
 	"github.com/go-redis/redis/v8"
+<<<<<<< HEAD
+=======
+	"github.com/zchengutx/testproject/SendSms"
+	"github.com/zchengutx/testproject/config"
+	_ "github.com/zchengutx/testproject/init-redis"
+	"github.com/zchengutx/testproject/nickName"
+	__ "github.com/zchengutx/testproject/user"
+>>>>>>> 6fd802f2aa545d23d903d6c61d0b451926aa9f53
 	"gorm.io/gorm"
 	"math/rand"
 	"net/http"
 	"strconv"
 	"time"
-	"user_server/basic/config"
-	__ "user_server/basic/proto"
-	"user_server/handler/dao"
 	"user_server/handler/model"
 )
 
@@ -29,7 +34,7 @@ func (s *UserServer) SendSms(_ context.Context, in *__.SendSmsReq) (*__.SendSmsR
 		return nil, err
 	}
 	if *sms.Body.Code != "OK" {
-		return nil, errors.New(*sms.Body.Code)
+		return nil, errors.New(*sms.Body.Message)
 	}
 	config.Rdb.Set(context.Background(), "sendSms"+in.Mobile+in.Source, strconv.Itoa(code), time.Minute*5)
 	return &__.SendSmsResp{}, nil
@@ -51,7 +56,7 @@ func (s *UserServer) RegisterOrLogin(ctx context.Context, in *__.RegisterReq) (*
 
 	// 2. 查询用户是否存在
 	var user model.VideoUser
-	dao.GetOneByFields(&model.VideoUser{Mobile: in.Mobile}, &user)
+	model.GetOneByFields(&model.VideoUser{Mobile: in.Mobile}, &user)
 	if err != nil && !errors.Is(err, gorm.ErrRecordNotFound) {
 		return nil, fmt.Errorf("查询用户失败: %v", err)
 	}
@@ -63,7 +68,7 @@ func (s *UserServer) RegisterOrLogin(ctx context.Context, in *__.RegisterReq) (*
 			NickName: nickName.RandomString(12),         // 默认随机昵称
 			UserCode: nickName.RandomFleetingString(10), // 用户唯一标识
 		}
-		if dao.Create(&user) {
+		if model.Create(&user) {
 			return nil, fmt.Errorf("注册失败: %v", err)
 		}
 
@@ -81,7 +86,7 @@ func (s *UserServer) RegisterOrLogin(ctx context.Context, in *__.RegisterReq) (*
 	if user.NickName == "" {
 		user.NickName = nickName.RandomString(12)
 	}
-	if !dao.Update(&user) {
+	if !model.Update(&user) {
 		return nil, fmt.Errorf("更新用户信息失败: %v", err)
 	}
 

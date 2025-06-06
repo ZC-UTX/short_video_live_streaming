@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="GoORMHelperCache">
-<<<<<<< HEAD
-    <option name="scannedPathMapping">
-      <map>
-        <entry key="file://$PROJECT_DIR$/videoClient/api/basic/cmd/main.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748868486198" />
-=======
     <option name="schemaMapping">
       <map>
         <entry key="AddMenuAuthorityInfo">
@@ -47,14 +39,6 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/service/system/sys_api.go" />
-            </set>
-          </value>
-        </entry>
-        <entry key="AppConfig">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/videoClient/user_server/basic/config/config.go" />
-              <option value="file://$PROJECT_DIR$/videoClient/works_server/basic/config/config.go" />
             </set>
           </value>
         </entry>
@@ -354,20 +338,6 @@
             </set>
           </value>
         </entry>
-        <entry key="CreatedWorksReq">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/videoClient/works_server/basic/works/works.pb.go" />
-            </set>
-          </value>
-        </entry>
-        <entry key="CreatedWorksResp">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/videoClient/works_server/basic/works/works.pb.go" />
-            </set>
-          </value>
-        </entry>
         <entry key="CurrentTime">
           <value>
             <set>
@@ -557,7 +527,7 @@
         <entry key="HotTopicAlgorithm">
           <value>
             <set>
-              <option value="file://$PROJECT_DIR$/videoClient/works_server/utlis/Topic.go" />
+              <option value="file://$PROJECT_DIR$/videoClient/topic_server/utlis/Topic.go" />
             </set>
           </value>
         </entry>
@@ -800,8 +770,6 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/config/gorm_mysql.go" />
-              <option value="file://$PROJECT_DIR$/videoClient/user_server/basic/config/config.go" />
-              <option value="file://$PROJECT_DIR$/videoClient/works_server/basic/config/config.go" />
             </set>
           </value>
         </entry>
@@ -882,13 +850,6 @@
             </set>
           </value>
         </entry>
-        <entry key="PageDto">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/videoClient/user_server/handler/dao/common.go" />
-            </set>
-          </value>
-        </entry>
         <entry key="PageInfo">
           <value>
             <set>
@@ -907,7 +868,6 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/model/common/response/common.go" />
-              <option value="file://$PROJECT_DIR$/videoClient/user_server/handler/dao/common.go" />
             </set>
           </value>
         </entry>
@@ -1003,20 +963,6 @@
             </set>
           </value>
         </entry>
-        <entry key="RegisterReq">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/videoClient/user_server/basic/proto/user.pb.go" />
-            </set>
-          </value>
-        </entry>
-        <entry key="RegisterResp">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/videoClient/user_server/basic/proto/user.pb.go" />
-            </set>
-          </value>
-        </entry>
         <entry key="ResetPassword">
           <value>
             <set>
@@ -1053,6 +999,7 @@
             <set>
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/config/config.go" />
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/utils/server.go" />
+              <option value="file://$PROJECT_DIR$/videoClient/topic_server/handler/service/topic.go" />
               <option value="file://$PROJECT_DIR$/videoClient/works_server/handler/service/works.go" />
             </set>
           </value>
@@ -1468,20 +1415,6 @@
             </set>
           </value>
         </entry>
-        <entry key="UnimplementedUserServer">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/videoClient/user_server/basic/proto/user_grpc.pb.go" />
-            </set>
-          </value>
-        </entry>
-        <entry key="UnimplementedWorksServer">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/videoClient/works_server/basic/works/works_grpc.pb.go" />
-            </set>
-          </value>
-        </entry>
         <entry key="UserRouter">
           <value>
             <set>
@@ -1506,6 +1439,7 @@
         <entry key="VideoDataTopic">
           <value>
             <set>
+              <option value="file://$PROJECT_DIR$/videoClient/topic_server/handler/model/topic.go" />
               <option value="file://$PROJECT_DIR$/videoClient/works_server/handler/model/topic.go" />
             </set>
           </value>
@@ -1514,6 +1448,7 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/model/video/video_topic.go" />
+              <option value="file://$PROJECT_DIR$/videoClient/topic_server/handler/model/topic.go" />
               <option value="file://$PROJECT_DIR$/videoClient/works_server/handler/model/topic.go" />
             </set>
           </value>
@@ -1915,28 +1850,6 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/gin-vue-admin-main/server/utils/timer/timed_task.go" />
-            </set>
-          </value>
-        </entry>
-        <entry key="userClient">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/videoClient/user_server/basic/proto/user_grpc.pb.go" />
-            </set>
-          </value>
-        </entry>
-        <entry key="worksClient">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/videoClient/works_server/basic/works/works_grpc.pb.go" />
-            </set>
-          </value>
-        </entry>
-        <entry key="x">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/videoClient/user_server/basic/proto/user.pb.go" />
-              <option value="file://$PROJECT_DIR$/videoClient/works_server/basic/works/works.pb.go" />
             </set>
           </value>
         </entry>
@@ -2887,7 +2800,7 @@
         <entry key="file://$PROJECT_DIR$/gin-vue-admin-main/server/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748508897275" />
+              <option name="lastModified" value="1748953120018" />
             </ScannedPath>
           </value>
         </entry>
@@ -5467,42 +5380,49 @@
         <entry key="file://$PROJECT_DIR$/videoClient/api/basic/cmd/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748952138413" />
+              <option name="lastModified" value="1748955520310" />
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/api/basic/config/config.go">
+        <entry key="file://$PROJECT_DIR$/videoClient/api/handler/api/topic.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748508897552" />
+              <option name="lastModified" value="1748955520314" />
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/api/basic/config/global.go">
+        <entry key="file://$PROJECT_DIR$/videoClient/api/handler/api/user.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748952138414" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/api/basic/init/init.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748952138416" />
+              <option name="lastModified" value="1749172025717" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/videoClient/api/router/router.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748952138419" />
+              <option name="lastModified" value="1749171963324" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/api/router/topic.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748955520314" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/api/router/user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1749172089377" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/videoClient/api/utlis/jwt.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748508897554" />
+              <option name="lastModified" value="1748953120295" />
               <option name="schema">
                 <list>
                   <option value="CustomClaims" />
@@ -5512,91 +5432,61 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/topic_server/basic/cmd/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748955520315" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/topic_server/handler/model/topic.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748955520317" />
+              <option name="schema">
+                <list>
+                  <option value="VideoTopic" />
+                  <option value="VideoDataTopic" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/topic_server/handler/service/topic.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748955520317" />
+              <option name="schema">
+                <list>
+                  <option value="Server" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/videoClient/topic_server/utlis/Topic.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1748955520318" />
+              <option name="schema">
+                <list>
+                  <option value="HotTopicAlgorithm" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/videoClient/user_server/basic/cmd/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748953120299" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/user_server/basic/config/config.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748953120299" />
-              <option name="schema">
-                <list>
-                  <option value="AppConfig" />
-                  <option value="Mysql" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/user_server/basic/config/global.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748953120300" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/user_server/basic/init/init.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748953120300" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/user_server/basic/proto/user.pb.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748953120300" />
-              <option name="schema">
-                <list>
-                  <option value="RegisterReq" />
-                  <option value="RegisterResp" />
-                  <option value="x" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/user_server/basic/proto/user_grpc.pb.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748953120301" />
-              <option name="schema">
-                <list>
-                  <option value="userClient" />
-                  <option value="UnimplementedUserServer" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/user_server/global/gobal.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748953120302" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/user_server/handler/dao/common.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748953120304" />
-              <option name="schema">
-                <list>
-                  <option value="PageDto" />
-                  <option value="PageResult" />
-                </list>
-              </option>
+              <option name="lastModified" value="1749039530398" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/videoClient/user_server/handler/model/video_user.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748953120308" />
+              <option name="lastModified" value="1749172308724" />
               <option name="schema">
                 <list>
                   <option value="VideoUser" />
@@ -5608,7 +5498,7 @@
         <entry key="file://$PROJECT_DIR$/videoClient/user_server/handler/server/server.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748953120308" />
+              <option name="lastModified" value="1749041023063" />
               <option name="schema">
                 <list>
                   <option value="UserServer" />
@@ -5617,72 +5507,10 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/user_server/pkg/nickName.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748953120309" />
-            </ScannedPath>
-          </value>
-        </entry>
         <entry key="file://$PROJECT_DIR$/videoClient/works_server/basic/cmd/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748952138429" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/works_server/basic/config/config.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748508897556" />
-              <option name="schema">
-                <list>
-                  <option value="AppConfig" />
-                  <option value="Mysql" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/works_server/basic/config/global.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748508897556" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/works_server/basic/init/init.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748508897557" />
->>>>>>> zk
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/works_server/basic/works/works.pb.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748953174339" />
-              <option name="schema">
-                <list>
-                  <option value="CreatedWorksReq" />
-                  <option value="CreatedWorksResp" />
-                  <option value="x" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/works_server/basic/works/works_grpc.pb.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748953174341" />
-              <option name="schema">
-                <list>
-                  <option value="worksClient" />
-                  <option value="UnimplementedWorksServer" />
-                </list>
-              </option>
+              <option name="lastModified" value="1748955520320" />
             </ScannedPath>
           </value>
         </entry>
@@ -5702,7 +5530,7 @@
         <entry key="file://$PROJECT_DIR$/videoClient/works_server/handler/model/works.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748953174342" />
+              <option name="lastModified" value="1748955520321" />
               <option name="schema">
                 <list>
                   <option value="VideoWorks" />
@@ -5714,7 +5542,7 @@
         <entry key="file://$PROJECT_DIR$/videoClient/works_server/handler/service/works.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1748952138431" />
+              <option name="lastModified" value="1748955520322" />
               <option name="schema">
                 <list>
                   <option value="Server" />
@@ -5723,22 +5551,8 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/videoClient/works_server/utlis/Topic.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1748953174343" />
-              <option name="schema">
-                <list>
-                  <option value="HotTopicAlgorithm" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
       </map>
     </option>
-<<<<<<< HEAD
-=======
     <option name="tableStructMapping">
       <map>
         <entry key="_gorm" value="_gorm" />
@@ -5748,7 +5562,6 @@
         <entry key="api_group" value="ApiGroup" />
         <entry key="api_router" value="ApiRouter" />
         <entry key="api_service" value="ApiService" />
-        <entry key="app_config" value="AppConfig" />
         <entry key="args" value="args" />
         <entry key="authority_api" value="AuthorityApi" />
         <entry key="authority_btn_api" value="AuthorityBtnApi" />
@@ -5801,8 +5614,6 @@
         <entry key="cors" value="CORS" />
         <entry key="cors_whitelist" value="CORSWhitelist" />
         <entry key="cpu" value="Cpu" />
-        <entry key="created_works_req" value="CreatedWorksReq" />
-        <entry key="created_works_resp" value="CreatedWorksResp" />
         <entry key="current_time" value="CurrentTime" />
         <entry key="custom_claims" value="CustomClaims" />
         <entry key="cutter" value="Cutter" />
@@ -5889,7 +5700,6 @@
         <entry key="package_initialize_gorm" value="PackageInitializeGorm" />
         <entry key="package_initialize_router" value="PackageInitializeRouter" />
         <entry key="package_module_enter" value="PackageModuleEnter" />
-        <entry key="page_dto" value="PageDto" />
         <entry key="page_info" value="PageInfo" />
         <entry key="page_info_test" value="PageInfoTest" />
         <entry key="page_result" value="PageResult" />
@@ -5907,8 +5717,6 @@
         <entry key="redis" value="Redis" />
         <entry key="redis_store" value="RedisStore" />
         <entry key="register" value="Register" />
-        <entry key="register_req" value="RegisterReq" />
-        <entry key="register_resp" value="RegisterResp" />
         <entry key="reset_password" value="ResetPassword" />
         <entry key="response" value="Response" />
         <entry key="response_body_writer" value="responseBodyWriter" />
@@ -5978,9 +5786,6 @@
         <entry key="task_manager" value="taskManager" />
         <entry key="tencent_cos" value="TencentCOS" />
         <entry key="timer" value="timer" />
-        <entry key="unimplemented_user_server" value="UnimplementedUserServer" />
-        <entry key="unimplemented_works_server" value="UnimplementedWorksServer" />
-        <entry key="user_client" value="userClient" />
         <entry key="user_router" value="UserRouter" />
         <entry key="user_server" value="UserServer" />
         <entry key="user_service" value="UserService" />
@@ -6001,14 +5806,11 @@
         <entry key="video_works_search" value="VideoWorksSearch" />
         <entry key="video_works_service" value="VideoWorksService" />
         <entry key="visitor" value="Visitor" />
-        <entry key="works_client" value="worksClient" />
         <entry key="writer" value="Writer" />
-        <entry key="x" value="x" />
         <entry key="zap" value="Zap" />
         <entry key="zap_core" value="ZapCore" />
       </map>
     </option>
-    <option name="lastTimeChecked" value="1748953200762" />
->>>>>>> zk
+    <option name="lastTimeChecked" value="1749171784070" />
   </component>
 </project>

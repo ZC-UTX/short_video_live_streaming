@@ -149,7 +149,7 @@ cd server
 go generate -run "go env -w .*?"
 
 # 使用如下命令下载swag
-go get -u github.com/swaggo/swag/cmd/swag
+go get -u github.com/swaggo/swag/init/swag
 ````
 
 #### 2.3.2 API docs generation
