@@ -1,0 +1,6 @@
+Nacos:
+  Namespace: e57360d8-b745-45ef-82eb-f517194d092f
+  Addr: 14.103.134.228
+  Port: 8848
+  Dataid: videoClient
+  Group: videoClient

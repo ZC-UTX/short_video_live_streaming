@@ -1,9 +1,9 @@
 package model
 
 import (
-	"github.com/zchengutx/testproject/config"
 	"gorm.io/gorm"
 	"time"
+	"topic_server/basic/config"
 )
 
 type VideoTopic struct {
