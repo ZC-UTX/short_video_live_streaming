@@ -8,6 +8,7 @@ func Router(r *gin.Engine) {
 		apiGroup := v1.Group("api")
 		{
 			TopicModel(apiGroup)
+			UserModel(apiGroup)
 		}
 	}
 }

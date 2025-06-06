@@ -1,6 +1,8 @@
 package model
 
 import (
+	"github.com/zchengutx/testproject/config"
+	_ "github.com/zchengutx/testproject/config"
 	"gorm.io/gorm"
 	"time"
 )
@@ -35,4 +37,28 @@ type VideoUser struct {
 
 func (VideoUser) TableName() string {
 	return "video_user"
+}
+
+// 添加功能
+func Create(v *VideoUser) bool {
+	if err := config.DB.Create(v).Error; err != nil {
+		return false
+	}
+	return true
+}
+
+// 查询功能
+func GetOneByFields[T any](where *T, data *T) bool {
+	if err := config.DB.Where(where).Find(data).Limit(1).Error; err != nil {
+		return false
+	}
+	return true
+}
+
+// 修改功能
+func Update[T any](data *T) bool {
+	if err := config.DB.Updates(data).Error; err != nil {
+		return false
+	}
+	return true
 }

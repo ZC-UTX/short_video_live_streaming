@@ -23,10 +23,10 @@ require (
 	github.com/spf13/cast v1.7.1 // indirect
 	github.com/spf13/pflag v1.0.6 // indirect
 	github.com/subosito/gotenv v1.6.0 // indirect
-<<<<<<< HEAD
-=======
+
+
 	github.com/zchengutx/testproject v0.0.0-20250602091224-a7ff2005cf78 // indirect
->>>>>>> 8a09d8c643121d1a9daf3be3d46ad033437c593c
+
 	go.uber.org/multierr v1.10.0 // indirect
 	golang.org/x/net v0.40.0 // indirect
 	golang.org/x/sys v0.33.0 // indirect
